@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".ui.DataActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="摘要"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/temp_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:text="温度"
+                android:textColor="#FF5722"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/time_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:text="00:00"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/tv_1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text=">"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="37°C"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/_temp"
+                app:layout_constraintTop_toBottomOf="@+id/_temp" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/humid_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/_humid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:text="湿度"
+                android:textColor="#2196F3"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/time_humid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:text="00:00"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/tv_2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text=">"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/humid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="97%"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/_humid"
+                app:layout_constraintTop_toBottomOf="@+id/_humid" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/heart_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/_heart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:text="心率♥"
+                android:textColor="#FF0000"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/time_heart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:text="00:00"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/tv_3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text=">"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/heart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="72 bpm"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/_heart"
+                app:layout_constraintTop_toBottomOf="@+id/_heart" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/SpO2_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/_SpO2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:text="血氧"
+                android:textColor="#FF9800"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/time_SpO2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:text="00:00"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/tv_4"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text=">"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/SpO2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="97%"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/_SpO2"
+                app:layout_constraintTop_toBottomOf="@+id/_SpO2" />
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+
+</LinearLayout>
